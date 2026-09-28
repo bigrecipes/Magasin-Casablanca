@@ -1,0 +1,6 @@
+{
+  "name": "Casablanca Shopping",
+  "description": "Boutique en ligne officielle et catalogue de Casablanca Shopping, magasin de vêtements situé au 67 Rue Aziz BELLAL, Casablanca 20250, Maroc.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
