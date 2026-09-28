@@ -34,3 +34,52 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #999999;
 }
+
+/* Entry animations for modals, drawers and floating widgets */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(22px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bubbleFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInSimple {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUpFade 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: bottom right;
+  will-change: transform, opacity;
+}
+
+.animate-bubble-in {
+  animation: bubbleFloat 0.42s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: bottom right;
+  will-change: transform, opacity;
+}
+
+.animate-fadeIn {
+  animation: fadeInSimple 0.25s ease-out forwards;
+}
+
